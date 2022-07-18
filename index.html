@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Calculadora de média">
+    <title>Calculadora de média</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body> 
+<main>
+    <img class="calculadora" src="/assets/sasun-bughdaryan-X4VwfPzy_2o-unsplash.jpg" alt="Imagem de uma calculadora">
+    <h1 class="title">Saiba se passou ou não</h1>
+    <form onsubmit="calcular(event)">
+        <label class="Notas">
+            Insira suas notas
+        </label>
+        <input class="input" id="notas"
+        type="number"
+        placeholder="Ex:4,5"
+        min="0"
+        step="0.1"
+        required
+        />
+        <input class="button" type="submit" value="Calcular"/>
+    </form>
+    <section id="aprovado" class="passornot hide">
+        <span id="text-result">Você passou</span>
+        <span id="result">Notas>6</span>
+    </section>
+    <div class="info">
+        <a target="_blank" href="calculo.html"><img src="/assets/info.png" alt="Informações" class="info-img"/></a>
+    </div>
+</main>
+
+<script src="/script.js"></script>
+
+</body>
+
+</html>
